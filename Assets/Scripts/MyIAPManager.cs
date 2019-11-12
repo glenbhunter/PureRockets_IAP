@@ -164,6 +164,8 @@ public class MyIAPManager : MonoBehaviour, IStoreListener
         public void OnPurchaseFailed(Product product, PurchaseFailureReason failureReason)
     {
         MyDebug(string.Format("OnPurchaseFailed: FAIL. Product: '{0}', PurchaseFailureReason: {1}", product.definition.storeSpecificId, failureReason));
+
+        
     }
 
     private void MyDebug(string debug)
